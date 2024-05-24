@@ -13,7 +13,7 @@
  * Este script é parte o curso de ADS.
  */
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import openDB from "../../database/dbConfig";
+// import openDB from "../../database/dbConfig";
 import { app, database } from "../../services/firebase";
 import {
   collection,
@@ -27,7 +27,7 @@ import {
 const dbInstance = collection(database, "eneias_rodrigues");
 
 export default async function handler(req, res) {
-  const db = await openDB();
+  // const db = await openDB();
 
   if (req.method === "GET") {
     const id = req.query.id;
